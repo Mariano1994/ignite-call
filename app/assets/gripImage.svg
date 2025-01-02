@@ -1,0 +1,56 @@
+<svg width="944" height="643" viewBox="0 0 944 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_6_1204" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-264" y="0" width="1208" height="682">
+<g opacity="0.1" clip-path="url(#clip0_6_1204)">
+<path d="M927.882 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M886.322 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M844.762 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M803.203 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M761.644 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M720.075 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M678.516 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M636.956 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M595.396 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M553.833 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M512.273 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M470.713 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M429.149 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M387.583 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M346.003 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M304.442 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M262.879 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M221.319 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M179.758 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M138.195 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M96.6351 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M55.0695 681.363L55.0704 0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M13.5118 681.363V0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 610.3H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 568.759H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 527.218L1040.52 527.219" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 485.678H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 444.138H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 402.595L1040.52 402.596" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 361.055H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 319.516H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 277.974L1040.52 277.975" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 236.434H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 194.895H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 153.354L1040.52 153.355" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 111.813H1040.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 70.2723L1040.52 70.2725" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M-263.675 28.7333L1040.52 28.7335" stroke="#727272" stroke-dasharray="6 6"/>
+</g>
+</mask>
+<g mask="url(#mask0_6_1204)">
+<path d="M744.194 232.744C744.194 403.233 510.847 541.442 223 541.442C-64.8472 541.442 -298.193 403.233 -298.193 232.744C-298.193 62.2554 -64.8472 -75.9532 223 -75.9532C510.847 -75.9532 744.194 62.2554 744.194 232.744Z" fill="url(#paint0_radial_6_1204)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_6_1204" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(297.379 337.923) rotate(90) scale(399.077 673.786)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_6_1204">
+<rect width="1208" height="681.935" fill="white" transform="translate(-264)"/>
+</clipPath>
+</defs>
+</svg>

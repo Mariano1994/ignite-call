@@ -1,7 +1,5 @@
+import HomePage from "./pages/home-page";
+
 export default function Home() {
-  return (
-    <div className="mt-4">
-      <span>Last Project Ignite Call</span>
-    </div>
-  );
+  return <HomePage />;
 }

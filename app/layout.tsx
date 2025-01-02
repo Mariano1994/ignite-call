@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { robotoFont } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body
+        className={` ${robotoFont.className} bg-gray-900 text-white antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
