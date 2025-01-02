@@ -1,5 +1,6 @@
 import Image from "next/image";
 import previewImage from "../assets/appPreview.png";
+import ClaimUserNameForm from "../components/claim-user-name-form";
 function HomePage() {
   return (
     <div className="min-h-[100vh] flex items-center justify-center gap-20 ml-auto mr-0 ">
@@ -9,6 +10,7 @@ function HomePage() {
           Conecte seu calendário e permita que as pessoas marquem agendamentos
           no seu tempo livre.
         </p>
+        <ClaimUserNameForm />
       </div>
       <div>
         <Image
