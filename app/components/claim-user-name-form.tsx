@@ -54,7 +54,7 @@ function ClaimUserNameForm() {
               disabled={isSubmitting}
             >
               Reservar
-              <ArrowRight />
+              <ArrowRight className=" animate-pulse hover:animate-none" />
             </Button>
           </form>
         </CardContent>
