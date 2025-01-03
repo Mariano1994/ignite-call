@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight } from "@phosphor-icons/react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -27,10 +28,13 @@ function ClaimUserNameForm() {
     resolver: zodResolver(claimUserNameFormSchema),
   });
 
-  const handleClaimUsername = (data: ClaimuserNameFormData) => {
-    console.log(data);
+  const router = useRouter();
+
+  async function handleClaimUsername(data: ClaimuserNameFormData) {
+    const { username } = data;
     reset();
-  };
+    router.push(`/register?username=${username}`);
+  }
   return (
     <Card className="bg-gray-700 border-none flex mt-3">
       <div className="w-full">

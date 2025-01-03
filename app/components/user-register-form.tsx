@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight } from "@phosphor-icons/react";
+import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -22,6 +23,8 @@ const RegiterUserFromSchema = z.object({
 type regiterUserFormData = z.infer<typeof RegiterUserFromSchema>;
 
 function UserRegisterForm() {
+  let defaultUserName = useSearchParams().get("username");
+
   const {
     register,
     handleSubmit,
@@ -29,6 +32,9 @@ function UserRegisterForm() {
     reset,
   } = useForm<regiterUserFormData>({
     resolver: zodResolver(RegiterUserFromSchema),
+    defaultValues: {
+      username: defaultUserName || "",
+    },
   });
 
   const handlerRegisterNewUser = (data: regiterUserFormData) => {
@@ -75,6 +81,7 @@ function UserRegisterForm() {
           <Button
             type="submit"
             className="bg-green-300 hover:bg-brightness-50 mt-3 w-full"
+            disabled={isSubmitting}
           >
             Próximo passso
             <ArrowRight />
