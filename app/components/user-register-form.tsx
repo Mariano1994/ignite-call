@@ -8,6 +8,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { api } from "../lib/axios";
 
 const RegiterUserFromSchema = z.object({
   username: z
@@ -37,10 +38,17 @@ function UserRegisterForm() {
     },
   });
 
-  const handlerRegisterNewUser = (data: regiterUserFormData) => {
-    console.log(data);
-    reset();
-  };
+  async function handlerRegisterNewUser(data: regiterUserFormData) {
+    try {
+      await api.post("/users", {
+        username: data.username,
+        fullname: data.userfullname,
+      });
+      reset();
+    } catch (error) {
+      console.log();
+    }
+  }
 
   return (
     <Card className="bg-gray-700 border-none w-[425px] py-6 mt-6 rounded-sm">
