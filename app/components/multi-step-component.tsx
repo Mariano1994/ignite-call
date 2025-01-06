@@ -8,7 +8,6 @@ function MultiStepComponent({
 }: MultiStepComponentProps) {
   // Create an array of steps from 1 to totalSteps
   const steps = Array.from({ length: totalSteps }, (_, index) => index + 1);
-  console.log(steps);
 
   return (
     <div className="flex flex-col mt-4 gap-2">

@@ -9,6 +9,8 @@ import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { api } from "../lib/axios";
+import {} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const RegiterUserFromSchema = z.object({
   username: z
@@ -25,6 +27,7 @@ type regiterUserFormData = z.infer<typeof RegiterUserFromSchema>;
 
 function UserRegisterForm() {
   let defaultUserName = useSearchParams().get("username");
+  const router = useRouter();
 
   const {
     register,
@@ -45,6 +48,7 @@ function UserRegisterForm() {
         fullname: data.userfullname,
       });
       reset();
+      router.push("/register/connect-calendar");
     } catch (error) {
       console.log(error);
     }

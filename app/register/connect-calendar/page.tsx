@@ -19,7 +19,7 @@ function Page() {
         <Card className="bg-gray-700 border-none w-[425px] pt-6 mt-6 rounded-sm">
           <CardContent>
             <div className="bg-gray-700 w-full flex items-center justify-between p-3  border-gray-300/55 border-[0.1px] rounded-sm text-white">
-              <span className="text-sm font-bold">Google Agenda</span>
+              <span className="text-sm font-bold">Google Calendar</span>
               <Button className="text-green-300 border-green-300 border">
                 Conectar
                 <ArrowRight />
