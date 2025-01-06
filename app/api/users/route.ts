@@ -1,7 +1,6 @@
 import { prisma } from "@/app/lib/prisma";
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { setCookie } from "nookies";
 
 export async function POST(req: Request, res: Response) {
   const userData = await req.json();

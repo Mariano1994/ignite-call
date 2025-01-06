@@ -46,7 +46,7 @@ function UserRegisterForm() {
       });
       reset();
     } catch (error) {
-      console.log();
+      console.log(error);
     }
   }
 

@@ -12,7 +12,7 @@ function RegisterPage() {
             Precisamos de algumas informações para criar seu perfil! Ah, você
             pode editar essas informações depois.
           </p>
-          <MultiStepComponent />
+          <MultiStepComponent totalSteps={4} currentStep={1} />
         </div>
         <UserRegisterForm />
       </div>
