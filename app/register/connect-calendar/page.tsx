@@ -1,4 +1,8 @@
+"use client";
 import MultiStepComponent from "@/app/components/multi-step-component";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "@phosphor-icons/react";
 
 function Page() {
   return (
@@ -12,7 +16,21 @@ function Page() {
           </p>
           <MultiStepComponent totalSteps={4} currentStep={2} />
         </div>
-        {/* <UserRegisterForm /> */}
+        <Card className="bg-gray-700 border-none w-[425px] pt-6 mt-6 rounded-sm">
+          <CardContent>
+            <div className="bg-gray-700 w-full flex items-center justify-between p-3  border-gray-300/55 border-[0.1px] rounded-sm text-white">
+              <span className="text-sm font-bold">Google Agenda</span>
+              <Button className="text-green-300 border-green-300 border">
+                Conectar
+                <ArrowRight />
+              </Button>
+            </div>
+            <Button className="bg-gray-200 hover:bg-brightness-50 mt-3 w-full">
+              Próximo passso
+              <ArrowRight />
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
