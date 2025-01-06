@@ -1,8 +1,11 @@
 import { prisma } from "@/app/lib/prisma";
 import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { setCookie } from "nookies";
 
-export async function POST(request: Request) {
-  const userData = await request.json();
+export async function POST(req: Request, res: Response) {
+  const userData = await req.json();
+  const cookieStore = await cookies();
 
   const userExists = await prisma.user.findUnique({
     where: {
@@ -27,6 +30,11 @@ export async function POST(request: Request) {
         username: userData.username,
         fullname: userData.fullname,
       },
+    });
+
+    cookieStore.set("@ignitecall", user.id, {
+      maxAge: 60 * 60 * 24 * 7, // 7 days
+      path: "/",
     });
 
     return NextResponse.json(user);
